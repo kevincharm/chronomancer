@@ -10,7 +10,7 @@
     "build": "tsc --declaration",
     "pretest": "npm run build",
     "test": "node ./src/index.spec.js",
-    "prepackage": "npm run build"
+    "prepack": "npm run build"
   },
   "author": "Kevin Tjiam <kevin@kevincharm.com>",
   "license": "Apache-2.0",
