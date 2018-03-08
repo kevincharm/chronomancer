@@ -1,0 +1,19 @@
+{
+  "name": "chronomancer",
+  "version": "1.0.0",
+  "description": "Manipulates the global Date object; useful for tests. Programmatically reproduce your own Groundhog Day.",
+  "main": "./src/index.js",
+  "scripts": {
+    "clean": "find ./src -name '*.js' -o -name '*.js.map' -exec rm {} \\;",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "pretest": "npm run build",
+    "test": "node ./src/index.spec.js"
+  },
+  "author": "Kevin Tjiam <kevin@kevincharm.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/tape": "^4.2.31",
+    "tape": "^4.9.0"
+  }
+}
