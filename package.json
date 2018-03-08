@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "Manipulates the global Date object; useful for tests. Programmatically reproduce your own Groundhog Day.",
   "main": "./src/index.js",
+  "types": "./src/index.d.ts",
   "scripts": {
     "clean": "find ./src -name '*.js' -o -name '*.js.map' -exec rm {} \\;",
     "prebuild": "npm run clean",
-    "build": "tsc",
+    "build": "tsc --declaration",
     "pretest": "npm run build",
-    "test": "node ./src/index.spec.js"
+    "test": "node ./src/index.spec.js",
+    "prepackage": "npm run build"
   },
   "author": "Kevin Tjiam <kevin@kevincharm.com>",
   "license": "Apache-2.0",
