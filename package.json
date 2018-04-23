@@ -13,6 +13,7 @@
     "prepack": "npm run build"
   },
   "author": "Kevin Tjiam <kevin@kevincharm.com>",
+  "repository": "github:kevincharm/chronomancer",
   "license": "Apache-2.0",
   "keywords": [
     "date",
