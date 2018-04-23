@@ -1,6 +1,6 @@
 {
   "name": "chronomancer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Manipulates the global Date object; useful for tests. Programmatically reproduce your own Groundhog Day.",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
